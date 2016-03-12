@@ -1,26 +1,26 @@
-br s -l 13
-br s -l 16
-br s -l 27
-br s -l 35
-br s -l 36
+breakpoint set -line 13
+breakpoint set -line 16
+breakpoint set -line 27
+breakpoint set -line 35
+breakpoint set -line 36
 process launch
-p $rsi -= 4
+print $rsi -= 4
 process continue
 process continue
-p $rsi += 4
+print $rsi += 4
 process continue
-p count = 0
-process continue
-process continue
-process continue
-p tmp = min[0] + min[1] + min[2]
-process continue
-p i = 0
+print count = 0
 process continue
 process continue
 process continue
-p biggest = min[i]
+print tmp = min[0] + min[1] + min[2]
+process continue
+print i = 0
 process continue
 process continue
-p biggest = min[i]
+process continue
+print biggest = min[i]
+process continue
+process continue
+print biggest = min[i]
 process continue
