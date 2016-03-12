@@ -1,2 +1,4 @@
 settings set target.x86-disassembly-flavor intel
 settings set prompt "(cmadinie) "
+
+script print "\033[32mcmadinie\033[0m"
