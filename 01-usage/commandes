@@ -2,8 +2,8 @@ br s -l 13
 br s -l 16
 br s -l 27
 br s -l 35
-br s -a 0x100000f5d
-process continue
+br s -l 36
+process launch
 p $rsi -= 4
 process continue
 process continue
@@ -19,8 +19,8 @@ p i = 0
 process continue
 process continue
 process continue
-p $rax += (i * 4)
+p biggest = min[i]
 process continue
 process continue
-p $rax += (i * 4)
+p biggest = min[i]
 process continue
