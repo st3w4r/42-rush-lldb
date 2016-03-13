@@ -1,26 +1,18 @@
+breakpoint set --name main
+process launch
 breakpoint set -line 13
 breakpoint set -line 16
 breakpoint set -line 27
-breakpoint set -line 35
-breakpoint set -line 36
-process launch
+breakpoint set -line 37
+process continue
 print $rsi -= 4
 process continue
 process continue
 print $rsi += 4
 process continue
 print count = 0
-process continue
-process continue
+breakpoint delete 3
 process continue
 print tmp = min[0] + min[1] + min[2]
 process continue
-print i = 0
-process continue
-process continue
-process continue
-print biggest = min[i]
-process continue
-process continue
-print biggest = min[i]
-process continue
+print biggest = (min[0] >= min[1]) ? min[0] : (min[1] >= min[2] ? min[1] : min[2]))
