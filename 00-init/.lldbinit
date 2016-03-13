@@ -1,4 +1,11 @@
 settings set target.x86-disassembly-flavor intel
 settings set prompt "(cmadinie) "
 
-script print "\033[32mcmadinie\033[0m"
+script print "'\033[31m\033[1m"
+script print "                          _ _       _      "
+script print "                         | (_)     (_)     " 
+script print "  ___ _ __ ___   __ _  __| |_ _ __  _  ___ "
+script print " / __| '_ ' _ \ / _' |/ _' | | '_ \| |/ _ \ "
+script print "| (__| | | | | | (_| | (_| | | | | | |  __/"
+script print " \___|_| |_| |_|\__,_|\__,_|_|_| |_|_|\___|"
+script print "\033[0m"
