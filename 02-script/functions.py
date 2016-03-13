@@ -4,7 +4,7 @@ def mainrun(debugger, command, result, dct):
 
 def pcfv(debugger, command, result, dct):
 	debugger.HandleCommand("process continue")
-	debugger.HandleCommand("frame variables")
+	debugger.HandleCommand("frame variable")
 
 def pcn(debugger, command, result, dct):
 	args = command.split(" ")
