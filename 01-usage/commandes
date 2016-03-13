@@ -3,14 +3,14 @@ process launch
 breakpoint set --line 16 --one-shot
 breakpoint set --source-pattern-regexp "std::cin|tmp /= max|return biggest;" // 13, 27 37
 process continue
-print $rsi -= 4
+expression -- $rsi -= 4
 process continue
 process continue
-print $rsi += 4
+expression -- $rsi += 4
 process continue
-print count = 0
+expression -- count = 0
 process continue
-print tmp = min[0] + min[1] + min[2]
+expression -- tmp = min[0] + min[1] + min[2]
 process continue
-print biggest = ((min[0] >= min[1]) ? min[0] : (min[1] >= min[2] ? min[1] : min[2]))
+expression -- biggest = ((min[0] >= min[1]) ? min[0] : (min[1] >= min[2] ? min[1] : min[2]))
 process continue
