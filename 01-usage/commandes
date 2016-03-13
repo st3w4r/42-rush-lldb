@@ -1,5 +1,3 @@
-breakpoint set --name main
-process launch
 breakpoint set --line 16 --one-shot
 breakpoint set --source-pattern-regexp "std::cin|tmp /= max|return biggest;" // 13, 27 37
 process continue
